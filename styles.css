@@ -213,3 +213,23 @@ img {
 .trending {
     grid-row: 2;
 }
+
+.trending > div {
+    display: grid;
+    gap: 20px;
+}
+
+.trending-project {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.trending-project img {
+    height: 3rem;
+    border-radius: 40px;
+}
+
+.trending-project p {
+    margin: 0;
+}
