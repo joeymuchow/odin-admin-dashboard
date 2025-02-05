@@ -60,9 +60,12 @@ img {
 
 .search {
     display: grid;
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: 1fr 6fr;
     align-items: center;
-    padding: 15px;
+}
+
+.search img {
+    justify-self: center;
 }
 
 .searchbar {
@@ -70,7 +73,7 @@ img {
     margin-right: 15%;
     border-radius: 15px;
     border: none;
-    padding: 2px;
+    padding: 2px 6px;
     background-color: #e2e8f0;
 }
 
@@ -80,14 +83,30 @@ img {
     align-items: center;
 }
 
+.account img {
+    justify-self: center;
+}
+
+.user-avatar {
+    border: none;
+    border-radius: 25px;
+    height: 2.5rem;
+    justify-self: center;
+}
+
 .username {
     font-weight: 700;
 }
 
 .user {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     align-items: center;
+}
+
+.user .user-avatar {
+    height: 3rem;
+    border-radius: 40px;
 }
 
 .user p {
@@ -148,10 +167,27 @@ img {
 .project {
     background: linear-gradient(to right, #ffaa00 8px, #ffffff 0);
     border: none;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    padding-bottom: 0;
+}
+
+.project div + div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project img {
+    margin: 0 10px;
 }
 
 .announcements {
     grid-row: 1;
+}
+
+.announcements > div {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .announcements h5 {
